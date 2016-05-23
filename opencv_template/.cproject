@@ -25,9 +25,10 @@
 							<tool id="cdt.managedbuild.tool.gnu.assembler.mingw.exe.debug.774768181" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.mingw.exe.debug">
 								<option id="gnu.both.asm.option.include.paths.602320712" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
 									<listOptionValue builtIn="false" value="F:/Libs/OpenCV2.4.9/include"/>
-									<listOptionValue builtIn="false" value="../opencv_common/cv_util"/>
-									<listOptionValue builtIn="false" value="../opencv_common/dcPreprocess"/>
-									<listOptionValue builtIn="false" value="../opencv_common/dcTile"/>
+									<listOptionValue builtIn="false" value="F:/Users/decoz/codework/OCR/opencv_template/opencv_common/cv_util"/>
+									<listOptionValue builtIn="false" value="F:/Users/decoz/codework/OCR/opencv_template/opencv_common/dcPreprocess"/>
+									<listOptionValue builtIn="false" value="F:/Users/decoz/codework/OCR/opencv_template/opencv_common/dcTile"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/opencv_template/opencv_common/opencv_common}&quot;"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1160733715" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
 							</tool>
@@ -37,7 +38,10 @@
 								<option id="gnu.cpp.compiler.mingw.exe.debug.option.debugging.level.932591231" name="Debug Level" superClass="gnu.cpp.compiler.mingw.exe.debug.option.debugging.level" value="gnu.cpp.compiler.debugging.level.max" valueType="enumerated"/>
 								<option id="gnu.cpp.compiler.option.include.paths.994571425" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
 									<listOptionValue builtIn="false" value="F:/Libs/OpenCV2.4.9/include"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/opencv_common/opencv_common}&quot;"/>
+									<listOptionValue builtIn="false" value="F:/Users/decoz/codework/OCR/opencv_template/opencv_common/cv_util"/>
+									<listOptionValue builtIn="false" value="F:/Users/decoz/codework/OCR/opencv_template/opencv_common/dcPreprocess"/>
+									<listOptionValue builtIn="false" value="F:/Users/decoz/codework/OCR/opencv_template/opencv_common/dcTile"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/opencv_template/opencv_common/opencv_common}&quot;"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.2067267363" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
 							</tool>
@@ -46,22 +50,17 @@
 								<option id="gnu.c.compiler.mingw.exe.debug.option.debugging.level.472054777" name="Debug Level" superClass="gnu.c.compiler.mingw.exe.debug.option.debugging.level" value="gnu.c.debugging.level.max" valueType="enumerated"/>
 								<option id="gnu.c.compiler.option.include.paths.786421645" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
 									<listOptionValue builtIn="false" value="F:/Libs/OpenCV2.4.9/include"/>
-									<listOptionValue builtIn="false" value="../opencv_common/cv_util"/>
-									<listOptionValue builtIn="false" value="../opencv_common/dcPreprocess"/>
-									<listOptionValue builtIn="false" value="../opencv_common/dcTile"/>
+									<listOptionValue builtIn="false" value="F:/Users/decoz/codework/OCR/opencv_template/opencv_common/cv_util"/>
+									<listOptionValue builtIn="false" value="F:/Users/decoz/codework/OCR/opencv_template/opencv_common/dcPreprocess"/>
+									<listOptionValue builtIn="false" value="F:/Users/decoz/codework/OCR/opencv_template/opencv_common/dcTile"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/opencv_template/opencv_common/opencv_common}&quot;"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1605773875" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
 							</tool>
 							<tool id="cdt.managedbuild.tool.gnu.c.linker.mingw.exe.debug.2053803119" name="MinGW C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.mingw.exe.debug"/>
 							<tool id="cdt.managedbuild.tool.gnu.cpp.linker.mingw.exe.debug.1637702206" name="MinGW C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.mingw.exe.debug">
-								<option id="gnu.cpp.link.option.paths.28643187" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
-									<listOptionValue builtIn="false" value="&quot;F:\Libs\OpenCV2.4.9\x86\mingw\bin&quot;"/>
-								</option>
-								<option id="gnu.cpp.link.option.libs.1335971571" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" valueType="libs">
-									<listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="libopencv_core249"/>
-									<listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="libopencv_imgproc249"/>
-									<listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="libopencv_highgui249"/>
-								</option>
+								<option id="gnu.cpp.link.option.paths.28643187" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" valueType="libPaths"/>
+								<option id="gnu.cpp.link.option.libs.1335971571" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" valueType="libs"/>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.1699925564" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
@@ -71,7 +70,6 @@
 					</folderInfo>
 					<sourceEntries>
 						<entry excluding="opencv_common|opencv_common/cv_util|opencv_common/dcPreprocess|dcPreprocess|cv_util|dcTile" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
-						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="opencv_common"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
