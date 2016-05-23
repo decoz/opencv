@@ -1,5 +1,4 @@
 #include "cv_util.h"
-#include <stdio.h>
 
 
 Rect imgrect(Mat img ){ return Rect(0, 0, img.cols, img.rows); }
@@ -108,11 +107,3 @@ Rect 	fitRect(Rect r, Rect a_r){
 
 	return r;
 }
-
-
-char* tostr(Rect r){
-	char *buff = new char[20];
-	sprintf(buff, "%d,%d,%d,%d",r.x,r.y,r.width,r.height);
-	return buff;
-}
-

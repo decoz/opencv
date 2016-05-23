@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>opencv_lab</name>
+	<name>opencv_template</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -61,7 +61,7 @@
 			<arguments>
 				<dictionary>
 					<key>LaunchConfigHandle</key>
-					<value>&lt;project&gt;/.externalToolBuilders/org.eclipse.cdt.managedbuilder.core.ScannerConfigBuilder (1).launch</value>
+					<value>&lt;project&gt;/.externalToolBuilders/org.eclipse.cdt.managedbuilder.core.ScannerConfigBuilder (3).launch</value>
 				</dictionary>
 			</arguments>
 		</buildCommand>
@@ -74,9 +74,19 @@
 	</natures>
 	<linkedResources>
 		<link>
-			<name>images/out_s1.jpg</name>
-			<type>1</type>
-			<locationURI>PARENT-3-PROJECT_LOC/git/CV_LIBS/hocr_char_extractor/images/real_r/out_s1.jpg</locationURI>
+			<name>import/opencv_common</name>
+			<type>2</type>
+			<locationURI>PARENT-3-PROJECT_LOC/git/opencv/opencv_common/opencv_common</locationURI>
+		</link>
+		<link>
+			<name>import/rid</name>
+			<type>2</type>
+			<locationURI>PARENT-3-PROJECT_LOC/git/gcc_lib/rid/rid</locationURI>
+		</link>
+		<link>
+			<name>import/system_lib</name>
+			<type>2</type>
+			<locationURI>PARENT-3-PROJECT_LOC/codework/OCR/system_lib/system_lib</locationURI>
 		</link>
 	</linkedResources>
 </projectDescription>

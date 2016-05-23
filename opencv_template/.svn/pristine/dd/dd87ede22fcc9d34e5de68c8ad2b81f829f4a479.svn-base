@@ -30,7 +30,7 @@ Rect 	rectsum(vector <Rect> rects);			//  vector 의  영역을 합산하는 영역을 계산
 
 Rect 	fitRect(Rect r, Rect a_r);				// r 이 a_r 의 영역을 초과할 경우 이를 a_r 안으로 매핑
 
-char 	*tostr(Rect r);							// rect 를 문자열로 1,2,2,1
+
 
 
 /********************************** angle ****************************/

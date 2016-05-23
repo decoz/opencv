@@ -14,17 +14,17 @@ Mat dcPreprocess::preprocess(Mat img){ 	// 전처리 실행
  *
  */
 
-
 	Mat gray;
 	if(isflip) flip(img,img,1);
 
 	if( img.channels() > 1 ) cvtColor(img, gray, CV_BGR2GRAY);
 	else gray = img;
 
-	 Mat kernel = (Mat_<float>(3,3) << 1,  1, 1, 1, -8, 1, 1,  1, 1); //filter2d를 위한 커널 셋팅
+	Mat kernel = (Mat_<float>(3,3) << 1,  1, 1, 1, -8, 1, 1,  1, 1); //filter2d를 위한 커널 셋팅
 
 	 Mat sharp = gray;
 	 Mat matBlurred,matThresh,matGrayscale,dst,imgLaplacian, result;
+
 
 	 filter2D(sharp, imgLaplacian, CV_32F, kernel);
 	 gray.convertTo(sharp, CV_32F);
@@ -33,13 +33,11 @@ Mat dcPreprocess::preprocess(Mat img){ 	// 전처리 실행
 
 	 imgResult.convertTo(imgResult, CV_8UC3);
 	 imgLaplacian.convertTo(imgLaplacian, CV_8UC3);
-
+	 gray = imgResult; // copy back
 
 	 GaussianBlur(imgResult,matBlurred,Size(5, 5),0);
 	 medianBlur(matBlurred, dst,3);
 	 result = WolfJolion (dst,  winx, winy, optK);
-
-
 	 threshold(result, matThresh, 80, 255, CV_THRESH_BINARY | CV_THRESH_BINARY_INV);
 
 	 return matThresh;
