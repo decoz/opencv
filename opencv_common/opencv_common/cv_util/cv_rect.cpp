@@ -82,6 +82,50 @@ Rect rectsum(Rect r1,Rect r2){
 	return r;
 }
 
+vector <Rect> sortRects( vector <Rect> rects, int type, int inc) {
+/*
+ * rect 들을 정렬
+ *
+ * type
+ * SORT_BY_SX	: start x 로 정렬		(default)
+ * SORT_BY_SY	: start y 로 정렬
+ * SORT_BY_MX	: x 중점으로 정렬
+ * SORT_BY_MY : y 중점으로 정렬
+ *
+ * inc
+ * 1	: incremental  (0,1,2...)			(default)
+ * -1	: decrement	(9,8,7...)
+ */
+	int s = (int) rects.size();
+	for(int i=0;i<s-1;i++)
+		for(int j=0; j<s-1-j; j++){
+			int v1, v2;
+			switch(type){
+			case SORT_BY_SX :
+				v1 = rects[j].x, v2 = rects[j+1].x; break;
+			case SORT_BY_SY :
+				v1 = rects[j].y, v2 = rects[j+1].y; break;
+			case SORT_BY_MX :
+				v1 = rects[j].x + rects[j].width;
+				v2 = rects[j+1].x + rects[j+1].width;
+				break;
+			case SORT_BY_MY :
+				v1 = rects[j].y + rects[j].height;
+				v2 = rects[j+1].y + rects[j+1].height;
+				break;
+			default:
+				i = s+1; 	// break out
+			}
+
+			if( ( v1 - v2 ) * inc  > 0) {
+				Rect t = rects[j];
+				rects[j] = rects[j+1];
+				rects[j+1] = t;
+			}
+		}
+
+	return rects;
+}
 
 
 Rect rectsum(vector <Rect> rects){
@@ -97,11 +141,14 @@ Rect rectsum(vector <Rect> rects){
 
 Rect 	fitRect(Rect r, Rect a_r){
 
+	if(r.width < 0 ) r.width = 0;
+	if(r.height < 0 ) r.height = 0;
+
 	if( r.x < a_r.x ) r.x = a_r.x;
 	if( r.y < a_r.y ) r.y = a_r.y;
 
-	if( r.x > a_r.x + a_r.width ) r.x = a_r.x;
-	if( r.y > a_r.y + a_r.height ) r.y = a_r.y;
+	if( r.x > a_r.x + a_r.width ) r.x = a_r.x +  a_r.width;
+	if( r.y > a_r.y + a_r.height ) r.y = a_r.y + a_r.height ;
 
 	if( r.x + r.width > a_r.x + a_r.width ) r.width =  a_r.x + a_r.width - r.x;
 	if( r.y + r.height > a_r.y + a_r.height ) r.height = a_r.y + a_r.height - r.y;

@@ -18,6 +18,8 @@ Scalar randcolor(int min, int max);
 
 /******************************** Rect ********************************/
 
+#define NULLRECT Rect{0,0,0,0}
+
 Rect 	imgrect(Mat img );
 bool 	inRectP(Rect r, Point p);				// 점 p가 r 안에 존재하는가를 확인
 bool 	inRectR(Rect br, Rect sr);				// sr 이 br 안에 존재하는 가를 확인
@@ -28,8 +30,18 @@ Rect 	rectsum(Rect r1,Rect r2);				// 두 영역을 포함하는 영역을 계산
 Rect 	rectsum(vector <Rect> rects);			//  vector 의  영역을 합산하는 영역을 계산
 
 Rect 	fitRect(Rect r, Rect a_r);				// r 이 a_r 의 영역을 초과할 경우 이를 a_r 안으로 매핑
+char*	tostr(Rect r);							// rect 를 문자열로 1,2,2,1
 
-char 	*tostr(Rect r);							// rect 를 문자열로 1,2,2,1
+
+
+
+#define SORT_BY_SX	0 	// start x 로 정렬
+#define SORT_BY_SY	1	// start y 로 정렬
+#define SORT_BY_MX	2 	// x 중점으로 정렬
+#define SORT_BY_MY 	3 	// y 중점으로 정렬
+
+vector <Rect> sortRects( vector <Rect> rects,	// rect vector 를 정렬
+		int type = SORT_BY_SX, int inc = 1);
 
 
 /********************************** angle ****************************/
