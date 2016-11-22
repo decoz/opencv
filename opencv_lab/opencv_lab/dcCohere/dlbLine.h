@@ -20,7 +20,11 @@
 
 #include <opencv2/opencv.hpp>
 using namespace cv;
+<<<<<<< HEAD
 using namespace std;
+=======
+
+>>>>>>> branch 'master' of https://github.com/decoz/opencv
 
 class dlbLine {
 public:

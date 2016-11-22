@@ -227,7 +227,11 @@ void dcHaarManager::clustering(){
 		}
 
 
+<<<<<<< HEAD
 	vector <Rect> clusters[gc];
+=======
+	Vector <Rect> clusters[gc];
+>>>>>>> branch 'master' of https://github.com/decoz/opencv
 
 	for(int i=0;i<n;i++){
 		int g  = group[i];

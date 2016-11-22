@@ -82,6 +82,7 @@ Rect rectsum(Rect r1,Rect r2){
 	return r;
 }
 
+<<<<<<< HEAD
 vector <Rect> sortRects( vector <Rect> rects, int type, int inc) {
 /*
  * rect 들을 정렬
@@ -149,6 +150,28 @@ Rect 	fitRect(Rect r, Rect a_r){
 
 	if( r.x > a_r.x + a_r.width ) r.x = a_r.x +  a_r.width;
 	if( r.y > a_r.y + a_r.height ) r.y = a_r.y + a_r.height ;
+=======
+
+
+Rect rectsum(vector <Rect> rects){
+	if( rects.size() > 0 ) {
+		Rect r = rects[0];
+		for(int i=0;i<rects.size();i++)
+			r = rectsum(r, rects[i]);
+		return r;
+	}
+	else return Rect(0,0,0,0);
+}
+
+
+Rect 	fitRect(Rect r, Rect a_r){
+
+	if( r.x < a_r.x ) r.x = a_r.x;
+	if( r.y < a_r.y ) r.y = a_r.y;
+
+	if( r.x > a_r.x + a_r.width ) r.x = a_r.x;
+	if( r.y > a_r.y + a_r.height ) r.y = a_r.y;
+>>>>>>> branch 'master' of https://github.com/decoz/opencv
 
 	if( r.x + r.width > a_r.x + a_r.width ) r.width =  a_r.x + a_r.width - r.x;
 	if( r.y + r.height > a_r.y + a_r.height ) r.height = a_r.y + a_r.height - r.y;

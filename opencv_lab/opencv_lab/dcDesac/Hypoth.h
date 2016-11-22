@@ -15,7 +15,11 @@ public:
 
 	Hypoth();
 	virtual ~Hypoth();
+<<<<<<< HEAD
 	bool match(Point p);
+=======
+	virtual  bool match(Point p);
+>>>>>>> branch 'master' of https://github.com/decoz/opencv
 
 
 };

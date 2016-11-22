@@ -21,6 +21,7 @@
 #define HARR_ROTL 3
 
 using namespace cv;
+<<<<<<< HEAD
 using namespace std;
 
 typedef struct _wRect {
@@ -39,6 +40,26 @@ private:
 
 public:
 	vector<WRect> rects;
+=======
+
+
+typedef struct _wRect {
+	double weight;
+	Rect r;
+} WRect;
+
+
+
+class dcHaar {
+
+private:
+	double rectSum(Mat itgMap, Rect r);
+	double rectMean(Mat itgMap, Rect r);
+
+
+public:
+	Vector<WRect> rects;
+>>>>>>> branch 'master' of https://github.com/decoz/opencv
 	Size max;
 	char *name;
 

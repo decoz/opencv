@@ -3,10 +3,13 @@
  *
  *  Created on: 2015. 7. 24.
  *      Author: decoz
+<<<<<<< HEAD
  *
  *  Ransac 알고리즘의 원리를 응용 여러 최적화 문제에
  *  대입해보기 위한 구현 (예정.. 언젠가..)
  *
+=======
+>>>>>>> branch 'master' of https://github.com/decoz/opencv
  */
 
 #include "dcDesac.h"

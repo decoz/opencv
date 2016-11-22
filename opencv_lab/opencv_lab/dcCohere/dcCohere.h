@@ -15,7 +15,10 @@
 #define DESAC_DCCOHERE_H_
 #include <opencv2/opencv.hpp>
 using namespace cv;
+<<<<<<< HEAD
 using namespace std;
+=======
+>>>>>>> branch 'master' of https://github.com/decoz/opencv
 
 #define 	LINEAR_STEP 0
 #define 	EXPO_STEP	1

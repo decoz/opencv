@@ -40,7 +40,11 @@ public:
 	Mat img;
 	String msg;
 	Rect r;
+<<<<<<< HEAD
 	vector <MonObj*> subObj;
+=======
+	Vector <MonObj*> subObj;
+>>>>>>> branch 'master' of https://github.com/decoz/opencv
 
 
 	/*

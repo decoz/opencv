@@ -13,6 +13,7 @@
 
 
 using namespace cv;
+<<<<<<< HEAD
 using namespace std;
 
 class dcHaarManager {
@@ -23,6 +24,17 @@ class dcHaarManager {
 
 public:
 	vector <dcHaar> hlist;
+=======
+
+class dcHaarManager {
+
+
+	Vector <Rect> candi;
+	Vector <int>  type;
+
+public:
+	Vector <dcHaar> hlist;
+>>>>>>> branch 'master' of https://github.com/decoz/opencv
 
 	Mat itgMap,srcImg;
 	bool loadHaarFile(char *fname);

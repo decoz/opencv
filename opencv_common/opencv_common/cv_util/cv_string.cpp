@@ -20,7 +20,11 @@ String wcharAt(String s, int idx){
 	int p = 0;
 	const char *buff = s.c_str();
 
+<<<<<<< HEAD
 	for(int i=0; i<idx && p < (int) s.size() ; i++){
+=======
+	for(int i=0; i<idx && p < s.size() ; i++){
+>>>>>>> branch 'master' of https://github.com/decoz/opencv
 		if( ( buff[p] & 0x80 ) == 0x80 ) p += 2;
 		else p++;
 	}

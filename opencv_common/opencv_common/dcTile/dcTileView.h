@@ -17,6 +17,7 @@
 
 #include <opencv2/opencv.hpp>
 using namespace cv;
+<<<<<<< HEAD
 using namespace std;
 
 class dcTileView {
@@ -26,6 +27,16 @@ private:
 
 	vector <Rect> rects;
 	vector <Mat> imgs;
+=======
+
+class dcTileView {
+private:
+	int maxw, maxh; 	// 창의 넓이 높이를 각각 또는 동시에 fix 해둠  free 인 경우 0 으로 세팅
+	int fixw, fixh; 		// image 의 넓이 높이를 각각 또는 동시에 fix 해둠
+
+	Vector <Rect> rects;
+	Vector <Mat> imgs;
+>>>>>>> branch 'master' of https://github.com/decoz/opencv
 
 	Point  getMaxXY();
 	Mat  	adjustSize(Mat img);

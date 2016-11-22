@@ -1,4 +1,5 @@
 eclipse.preferences.version=1
+<<<<<<< HEAD
 environment/buildEnvironmentInclude/cdt.managedbuild.config.gnu.mingw.exe.debug.2101419594.288607010/CPATH/delimiter=;
 environment/buildEnvironmentInclude/cdt.managedbuild.config.gnu.mingw.exe.debug.2101419594.288607010/CPATH/operation=remove
 environment/buildEnvironmentInclude/cdt.managedbuild.config.gnu.mingw.exe.debug.2101419594.288607010/CPLUS_INCLUDE_PATH/delimiter=;
@@ -19,6 +20,16 @@ environment/buildEnvironmentLibrary/cdt.managedbuild.config.gnu.mingw.exe.debug.
 environment/buildEnvironmentLibrary/cdt.managedbuild.config.gnu.mingw.exe.debug.2101419594.288607010/LIBRARY_PATH/operation=remove
 environment/buildEnvironmentLibrary/cdt.managedbuild.config.gnu.mingw.exe.debug.2101419594.288607010/append=true
 environment/buildEnvironmentLibrary/cdt.managedbuild.config.gnu.mingw.exe.debug.2101419594.288607010/appendContributed=true
+=======
+environment/buildEnvironmentInclude/cdt.managedbuild.config.gnu.mingw.exe.debug.2101419594/CPATH/delimiter=;
+environment/buildEnvironmentInclude/cdt.managedbuild.config.gnu.mingw.exe.debug.2101419594/CPATH/operation=remove
+environment/buildEnvironmentInclude/cdt.managedbuild.config.gnu.mingw.exe.debug.2101419594/CPLUS_INCLUDE_PATH/delimiter=;
+environment/buildEnvironmentInclude/cdt.managedbuild.config.gnu.mingw.exe.debug.2101419594/CPLUS_INCLUDE_PATH/operation=remove
+environment/buildEnvironmentInclude/cdt.managedbuild.config.gnu.mingw.exe.debug.2101419594/C_INCLUDE_PATH/delimiter=;
+environment/buildEnvironmentInclude/cdt.managedbuild.config.gnu.mingw.exe.debug.2101419594/C_INCLUDE_PATH/operation=remove
+environment/buildEnvironmentInclude/cdt.managedbuild.config.gnu.mingw.exe.debug.2101419594/append=true
+environment/buildEnvironmentInclude/cdt.managedbuild.config.gnu.mingw.exe.debug.2101419594/appendContributed=true
+>>>>>>> branch 'master' of https://github.com/decoz/opencv
 environment/buildEnvironmentLibrary/cdt.managedbuild.config.gnu.mingw.exe.debug.2101419594/LIBRARY_PATH/delimiter=;
 environment/buildEnvironmentLibrary/cdt.managedbuild.config.gnu.mingw.exe.debug.2101419594/LIBRARY_PATH/operation=remove
 environment/buildEnvironmentLibrary/cdt.managedbuild.config.gnu.mingw.exe.debug.2101419594/append=true

@@ -5,6 +5,7 @@
 #include "dcCohere/dlbLine.h"
 #include <stdio.h>
 
+<<<<<<< HEAD
 using namespace cv;
 
 void test_dlbLine();
@@ -17,6 +18,23 @@ int main ( int argc, char **argv ){
 	dcCohere coh;
 
 	//test_dlbLine();
+=======
+
+using namespace cv;
+
+void test_dlbLine();
+void showMapBycolor(Mat gimg);
+void test_ransac_from_cohere(Mat gimg, int vs);
+void show_cohere_tree(Mat gimg, int last_size);
+
+int main ( int argc, char **argv ){
+
+	dcCohere coh;
+
+
+	//test_dlbLine();
+
+>>>>>>> branch 'master' of https://github.com/decoz/opencv
 
 	if(argc < 2) printf("usage: loader [image filename]+ \n");
 

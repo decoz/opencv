@@ -3,6 +3,7 @@
 #include <opencv2/opencv.hpp>
 
 using namespace cv;
+<<<<<<< HEAD
 using namespace std;
 /******************************** cvt_color **************************/
 
@@ -42,6 +43,36 @@ char*	tostr(Rect r);							// rect 를 문자열로 1,2,2,1
 
 vector <Rect> sortRects( vector <Rect> rects,	// rect vector 를 정렬
 		int type = SORT_BY_SX, int inc = 1);
+=======
+
+/******************************** cvt_color **************************/
+
+Mat asBgBlack(Mat src);
+Mat asBgWhite(Mat src);
+Mat asGray(Mat src);
+Mat asBGR(Mat src);
+
+/******************************** display util ************************/
+
+void putMultiLine(Mat img, const string& text, Point org,	int fontFace, double fontScale, Scalar color, int l_height );
+
+
+
+/******************************** Rect ********************************/
+
+Rect 	imgrect(Mat img );
+bool 	inRectP(Rect r, Point p);				// 점 p가 r 안에 존재하는가를 확인
+bool 	inRectR(Rect br, Rect sr);				// sr 이 br 안에 존재하는 가를 확인
+
+Rect 	interRect(Rect r1, Rect r2);				// 두 영역중에 교차영역을 계산
+
+Rect 	rectsum(Rect r1,Rect r2);				// 두 영역을 포함하는 영역을 계산
+Rect 	rectsum(vector <Rect> rects);			//  vector 의  영역을 합산하는 영역을 계산
+
+Rect 	fitRect(Rect r, Rect a_r);				// r 이 a_r 의 영역을 초과할 경우 이를 a_r 안으로 매핑
+
+char 	*tostr(Rect r);							// rect 를 문자열로 1,2,2,1
+>>>>>>> branch 'master' of https://github.com/decoz/opencv
 
 
 /********************************** angle ****************************/
